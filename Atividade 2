@@ -1,0 +1,23 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int numero;
+        Console.Write("Digite um número: ");
+        numero = int.Parse(Console.ReadLine());
+
+        int a = 0;
+        int b = 1;
+        int c = a + b;
+        while (c <= numero) {
+            if (c == numero) {
+                Console.WriteLine("{0} pertence à sequência de Fibonacci", numero);
+                return;
+            }
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        Console.WriteLine("{0} não pertence à sequência de Fibonacci", numero);
+    }
+}
