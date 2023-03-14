@@ -1,0 +1,26 @@
+using System;
+
+class Program {
+  static void Main(string[] args) {
+    decimal sp = 67836.43M;
+    decimal rj = 36678.66M;
+    decimal mg = 29229.88M;
+    decimal es = 27165.48M;
+    decimal outros = 19849.53M;
+
+    decimal total = sp + rj + mg + es + outros;
+
+    decimal percentualSP = sp / total * 100;
+    decimal percentualRJ = rj / total * 100;
+    decimal percentualMG = mg / total * 100;
+    decimal percentualES = es / total * 100;
+    decimal percentualOutros = outros / total * 100;
+
+    Console.WriteLine("Percentual de representação de cada estado:");
+    Console.WriteLine("SP: {0}%", percentualSP);
+    Console.WriteLine("RJ: {0}%", percentualRJ);
+    Console.WriteLine("MG: {0}%", percentualMG);
+    Console.WriteLine("ES: {0}%", percentualES);
+    Console.WriteLine("Outros: {0}%", percentualOutros);
+  }
+}
